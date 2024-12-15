@@ -7,7 +7,7 @@ import pandas as pd
 today_date = datetime.now().strftime("%Y-%m-%d")
 PARIS_CITY_CODE = 1
 NANTES_CITY_CODE = 2
-TOULOUSE_CITY_CODE = 3
+TOULOUSE_CITY_CODE = 3 
 
 def create_consolidate_tables():
     con = duckdb.connect(database="data/duckdb/mobility_analysis.duckdb", read_only=False)
